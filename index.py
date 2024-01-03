@@ -61,3 +61,6 @@ def main():
             subject = input("Ingrese la materia: ")
             grade = float(input("Ingrese la calificación: "))
             school_manager.assign_grade(student_id, subject, grade)
+        elif choice == '3':
+            student_id = input("Ingrese el ID del estudiante para generar el informe académico: ")
+            school_manager.generate_academic_report(student_id)
