@@ -68,3 +68,5 @@ def main():
             school_manager.save_students()
             print("Saliendo del programa. ¡Hasta luego!")
             break
+        else:
+            print("Opción no válida. Por favor, ingrese un número del 1 al 4.")
