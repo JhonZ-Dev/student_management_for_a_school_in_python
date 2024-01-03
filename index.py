@@ -51,3 +51,8 @@ def main():
         print("4. Salir")
 
         choice = input("Ingrese su elección (1-4): ")
+        if choice == '1':
+            student_id = input("Ingrese el ID del estudiante: ")
+            student_name = input("Ingrese el nombre del estudiante: ")
+            new_student = Student(student_id, student_name)
+            school_manager.add_student(new_student)
