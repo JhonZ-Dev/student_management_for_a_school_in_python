@@ -22,3 +22,11 @@ class SchoolManager:
         self.students.append(student)
         self.save_students()
         print(f'Estudiante "{student.name}" añadido con éxito.')
+    def assign_grade(self, student_id, subject, grade):
+        for student in self.students:
+            if student.student_id == student_id:
+                student.grade[subject] = grade
+                self.save_students()
+                print(f'Calificación asignada a {student.name} en {subject}: {grade}.')
+                return
+        print(f'Estudiante con ID {student_id} no encontrado.')
