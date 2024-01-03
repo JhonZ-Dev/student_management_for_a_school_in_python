@@ -56,3 +56,8 @@ def main():
             student_name = input("Ingrese el nombre del estudiante: ")
             new_student = Student(student_id, student_name)
             school_manager.add_student(new_student)
+        elif choice == '2':
+            student_id = input("Ingrese el ID del estudiante: ")
+            subject = input("Ingrese la materia: ")
+            grade = float(input("Ingrese la calificación: "))
+            school_manager.assign_grade(student_id, subject, grade)
