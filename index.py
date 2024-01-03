@@ -30,3 +30,14 @@ class SchoolManager:
                 print(f'Calificación asignada a {student.name} en {subject}: {grade}.')
                 return
         print(f'Estudiante con ID {student_id} no encontrado.')
+    def generate_academic_report(self, student_id):
+        for student in self.students:
+            if student.student_id == student_id:
+                print(f'\n--- Informe Académico para {student.name} ---')
+                if not student.grade:
+                    print("Aún no se han asignado calificaciones.")
+                else:
+                    for subject, grade in student.grade.items():
+                        print(f"{subject}: {grade}")
+                return
+        print(f'Estudiante con ID {student_id} no encontrado.')
