@@ -18,3 +18,7 @@ class SchoolManager:
     def save_students(self):
             with open(self.students_filename, 'wb') as file:
                 pickle.dump(self.students, file)
+    def add_student(self, student):
+        self.students.append(student)
+        self.save_students()
+        print(f'Estudiante "{student.name}" añadido con éxito.')
