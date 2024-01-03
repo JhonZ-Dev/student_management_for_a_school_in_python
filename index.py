@@ -43,3 +43,9 @@ class SchoolManager:
         print(f'Estudiante con ID {student_id} no encontrado.')
 def main():
     school_manager = SchoolManager()
+    while True:
+        print("\n--- Sistema de Gestión Escolar ---")
+        print("1. Agregar estudiante")
+        print("2. Asignar calificación")
+        print("3. Generar informe académico")
+        print("4. Salir")
