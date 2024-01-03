@@ -41,3 +41,5 @@ class SchoolManager:
                         print(f"{subject}: {grade}")
                 return
         print(f'Estudiante con ID {student_id} no encontrado.')
+def main():
+    school_manager = SchoolManager()
