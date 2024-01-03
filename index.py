@@ -64,3 +64,7 @@ def main():
         elif choice == '3':
             student_id = input("Ingrese el ID del estudiante para generar el informe académico: ")
             school_manager.generate_academic_report(student_id)
+        elif choice == '4':
+            school_manager.save_students()
+            print("Saliendo del programa. ¡Hasta luego!")
+            break
