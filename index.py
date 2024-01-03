@@ -15,3 +15,6 @@ class SchoolManager:
             with open(self.students_filename, 'rb') as file:
                 return pickle.load(file)
         return []
+    def save_students(self):
+            with open(self.students_filename, 'wb') as file:
+                pickle.dump(self.students, file)
